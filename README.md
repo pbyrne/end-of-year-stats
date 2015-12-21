@@ -11,7 +11,7 @@ This script uses environment variables to configure your authentication. Create 
 export GITHUB_TOKEN='token'
 ```
 
-You can generate a new GitHub API token on [in your Personal access tokens page](https://github.com/settings/tokens).
+You can generate a new GitHub API token on [in your Personal access tokens page](https://github.com/settings/tokens). The token only needs "repo" access (to read private repository data).
 
 Usage
 -----
