@@ -45,7 +45,6 @@ namespace :github do
   end
 
   task :setup do
-    puts "Setting things up..."
     Octokit.configure do |config|
       config.access_token = ENV.fetch("GITHUB_TOKEN")
       config.auto_paginate = true
