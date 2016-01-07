@@ -31,7 +31,7 @@ namespace :github do
       end
       puts "    - Comments: #{comments.size}"
 
-      issues = Octokit.list_issues(full_name).select do |issue|
+      issues = Octokit.list_issues(full_name, state: :all).select do |issue|
         issue.created_at.year == year
       end
       puts "    - Issues: #{issues.size}"
